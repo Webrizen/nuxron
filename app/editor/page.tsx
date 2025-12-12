@@ -31,7 +31,7 @@ export default function EditorPage() {
     }, [initProject]);
 
     return (
-        <div className="h-screen w-full flex flex-col bg-background">
+        <div className="h-[calc(100vh-3.5rem)] w-full flex flex-col bg-background">
             <div className="flex-1 overflow-hidden">
                 <ResizablePanelGroup direction="horizontal" className="h-full w-full rounded-lg border">
                     <ResizablePanel defaultSize={50} minSize={20} className="bg-background">
