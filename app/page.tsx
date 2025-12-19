@@ -36,17 +36,17 @@ export default function Home() {
       <section className="py-24 sm:py-32 w-full">
         <div className="mx-auto px-6 container lg:px-8">
           <h2 className="text-center text-base/7 font-semibold text-indigo-400">Client‑side Bioinformatics</h2>
-          <p className="mx-auto mt-2 max-w-4xl text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
+          <p className="mx-auto mt-2 max-w-4xl text-center text-4xl font-semibold tracking-tight text-balance dark:text-white sm:text-5xl">
             Edit, visualize, and simulate DNA, entirely in your browser
           </p>
 
           <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
             {/* Browser-native / Local-first */}
             <div className="relative lg:row-span-2">
-              <div className="absolute inset-px rounded-lg bg-zinc-800 lg:rounded-l-4xl" />
+              <div className="absolute inset-px rounded-lg dark:bg-zinc-800 bg-zinc-100 lg:rounded-l-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Browser‑native & Local‑first</p>
+                  <p className="mt-2 text-lg font-medium tracking-tight dark:text-white text-black max-lg:text-center">Browser‑native & Local‑first</p>
                   <p className="mt-2 max-w-lg text-sm/6 text-zinc-400 max-lg:text-center">
                     Nuxron runs entirely on the client — sequences are persisted in IndexedDB, computations happen in the browser, and no user data is uploaded to any server by default.
                   </p>
@@ -69,10 +69,10 @@ export default function Home() {
 
             {/* Web Worker simulations */}
             <div className="relative max-lg:row-start-1">
-              <div className="absolute inset-px rounded-lg bg-zinc-800 max-lg:rounded-t-4xl" />
+              <div className="absolute inset-px rounded-lg dark:bg-zinc-800 bg-zinc-100 max-lg:rounded-t-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Web‑Worker Simulations</p>
+                  <p className="mt-2 text-lg font-medium tracking-tight dark:text-white text-black max-lg:text-center">Web‑Worker Simulations</p>
                   <p className="mt-2 max-w-lg text-sm/6 text-zinc-400 max-lg:text-center">
                     Heavy operations (GC content, reverse complement, translation) run in a Web Worker so the UI stays responsive even for long sequences.
                   </p>
@@ -91,11 +91,11 @@ export default function Home() {
 
             {/* Client-side biosecurity */}
             <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-              <div className="absolute inset-px rounded-lg bg-zinc-800" />
+              <div className="absolute inset-px rounded-lg dark:bg-zinc-800 bg-zinc-100" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Client‑side Biosecurity</p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-zinc-400 max-lg:text-center">
+                  <p className="mt-2 text-lg font-medium tracking-tight dark:text-white text-black max-lg:text-center">Client‑side Biosecurity</p>
+                  <p className="mt-2 max-w-lg text-sm/6 dark:text-zinc-400 text-zinc-600 max-lg:text-center">
                     A local biosecurity screen scans sequences against a hashed blocklist in the browser, showing warnings without sending sensitive data to external services.
                   </p>
                 </div>
@@ -113,11 +113,11 @@ export default function Home() {
 
             {/* Editor, export, and code example */}
             <div className="relative lg:row-span-2">
-              <div className="absolute inset-px rounded-lg bg-zinc-800 max-lg:rounded-b-4xl lg:rounded-r-4xl" />
+              <div className="absolute inset-px rounded-lg dark:bg-zinc-800 bg-zinc-100 max-lg:rounded-b-4xl lg:rounded-r-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Editor, Export & Integrations</p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-zinc-400 max-lg:text-center">
+                  <p className="mt-2 text-lg font-medium tracking-tight dark:text-white text-black max-lg:text-center">Editor, Export & Integrations</p>
+                  <p className="mt-2 max-w-lg text-sm/6 dark:text-zinc-400 text-zinc-600 max-lg:text-center">
                     Monaco-powered editor with FASTA support, 2D/3D visualizations, and local export (FASTA, PDF). Lightweight APIs let you script analyses while keeping data local.
                   </p>
                 </div>
@@ -217,9 +217,9 @@ export function translateDNA(dna: string): string {
           </figure>
         </div>
       </section>
-      <section className="bg-gray-900">
+      <section className="dark:bg-zinc-900">
         <div className="mx-auto container py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-800 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div className="relative isolate overflow-hidden dark:bg-zinc-800 bg-zinc-900/10 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <svg
               viewBox="0 0 1024 1024"
               aria-hidden="true"
@@ -235,17 +235,17 @@ export function translateDNA(dna: string): string {
             </svg>
 
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight text-balance dark:text-white sm:text-4xl">
                 Explore DNA, privately, instantly, in your browser
               </h2>
 
-              <p className="mt-6 text-lg/8 text-pretty text-gray-300">
+              <p className="mt-6 text-lg/8 text-pretty dark:text-zinc-300 text-zinc-600">
                 Nuxron is a local‑first bioinformatics studio, edit FASTA, visualize a 3D helix, run GC and translation
                 simulations in a Web Worker, and export results (FASTA/PDF), all without uploading your data.
               </p>
 
-              <div className="mt-6 flex items-center gap-3 text-sm text-gray-400">
-                <span className="inline-flex items-center rounded-full bg-white/5 px-2 py-1 text-xs font-medium whitespace-nowrap">
+              <div className="mt-6 flex items-center gap-3 text-sm text-zinc-400">
+                <span className="inline-flex items-center rounded-full dark:bg-white/5 bg-white px-2 py-1 text-xs font-medium whitespace-nowrap">
                   MIT · Open Source
                 </span>
                 <span className="text-xs">•</span>
