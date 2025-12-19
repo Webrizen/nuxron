@@ -119,4 +119,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .bg-1{
+      background: radial-gradient(at 52% 39%, #114c5f1d 0px, transparent 50%), radial-gradient(at 63% 8%, #3e1a9347 0px, transparent 50%), radial-gradient(at 79% 59%, #9c88d429 0px, transparent 50%), radial-gradient(at 73% 82%, #f3e9d20b 0px, transparent 50%), #114c5f0a;
+  }
 }
