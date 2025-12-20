@@ -63,6 +63,9 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@nuxron_bio",
   },
+  verification: {
+    google: "kThCblVYK2X0Rwp5rR1Tuy4Pv50WA26VgDFB4MZTt2o",
+  },
   robots: {
     index: true,
     follow: true,
