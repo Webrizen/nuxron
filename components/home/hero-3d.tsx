@@ -369,8 +369,7 @@ export const DnaHero: React.FC<DnaHeroProps> = ({
         width: '150%', 
         height: '100%', 
         minHeight: '550px',
-        overflow: 'hidden', 
-        backgroundColor: '#071026',
+        overflow: 'hidden',
         ...style 
       }}
     >
